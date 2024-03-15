@@ -852,14 +852,14 @@ internal class Principal
                             Console.ForegroundColor = ConsoleColor.DarkYellow;
                             if (jogador.ptvida > 0)
                             {
-                                if (jogador.vida + 5700 > jogador.vidamax)
+                                if (jogador.vida + 10700 > jogador.vidamax)
                                 {
                                     jogador.vida = jogador.vidamax;
                                     jogador.ptvida -= 1;
                                 }
-                                else if (jogador.vida + 5700 < jogador.vidamax)
+                                else if (jogador.vida + 10700 < jogador.vidamax)
                                 {
-                                    jogador.vida += 5700;
+                                    jogador.vida += 10700;
                                     jogador.ptvida -= 1;
                                 }
                                 Thread.Sleep(2000);
